@@ -1,0 +1,4 @@
+DARK BLUE - #004aad
+BLUE - #00acdf
+SKY BLUE - #55d0ff
+LIGHT BLUE - #ccf9ff

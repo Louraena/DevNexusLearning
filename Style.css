@@ -1,0 +1,648 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccf9ff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*NAVIGATION*/
+.NAVIGATION {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    background-color: #ccf9ff;     
+    position: sticky;          
+    top: 0;                       
+    z-index: 1000;            
+    box-shadow: 0 4px 8px #ccf9ff;              
+}
+
+.NAVIGATION img.logo {
+    max-width: 250px;
+    height: auto;
+    padding-right: 150px;
+}
+
+.search-box {
+    display: flex;  
+    align-items: center;
+    background-color: white;
+    border: 3px solid #55d0ff;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 450px;
+    margin: 0 10px;
+    flex-grow: 1;            
+    position: relative;      
+}
+
+.search-box input[type="text"] {
+    flex-grow: 1;                  
+    border: none;                  
+    outline: none;                 
+    background: transparent;       
+    padding: 8px 10px;                 
+    font-size: 16px;              
+    color: #55d0ff;   
+}
+
+.search-box input::placeholder {
+    color: #55d0ff;
+}
+
+.search-box i {
+    font-size: 16px;
+    cursor: pointer;
+    color: #55d0ff;
+}
+/*testes AHAHAH*/
+.testimonial-link {
+    margin-bottom: 50px;
+    color: #55d0ff; 
+    text-decoration: none; /* Remove underline by default */
+    font-size: 17px; /* Slightly larger font size for emphasis */
+    transition: text-decoration 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.testimonial-link:hover {
+text-decoration: underline; /* Underline on hover */
+}
+.search-dropdown {
+    max-height: 300px; /* Allow the dropdown to expand fully */
+    height: auto;
+    overflow-y: auto; /* Adds scrolling if content exceeds height */
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Positioned just below the search box */
+    left: 0;
+    width: 100%;
+    background-color: rgba(204, 249, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Applies blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For WebKit-based browsers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+    border-radius: 8px; /* Smooth edges */
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.search-dropdown.show {
+    display: block; /* Visible when the "show" class is added */
+}
+
+.search-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color:#004aad;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.search-dropdown a:hover {
+    background-color: #55d0ff;
+    color: white;
+}
+.NAVIGATION i {
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #55d0ff;
+}
+.NAVIGATION a:nth-child(6){
+    display: none;
+}
+
+.btn-signin {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 2px solid #55d0ff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+      
+}
+.btn-signin a{
+    text-decoration: none;
+    align-items: center;
+    color: #55d0ff;
+    font-size: 16px;
+    display: flex;
+}
+
+.btn-signin i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+
+
+/*First-Section*/
+.First-Section {
+    text-align: center; 
+    margin-top: 0;  
+    padding-left:50px;
+    padding-right: 50px;
+
+}
+
+.First-Section h1 {
+    font-family: 'Poppins'; 
+    font-size: 48px;       
+    font-weight: 900;      
+    color: #004aad;          
+    margin-bottom: 10px;  
+    margin-top: 0;      
+    margin-bottom: 5px; 
+    padding-top: 0; 
+}
+
+.First-Section p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 18px;     
+    color: #004aad;         
+    line-height: 1.6;     
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.First-Section a {
+    text-decoration: none;       
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;             
+    font-weight: 500;          
+    color: #55d0ff;    
+    display: inline-block;   
+    text-decoration: none;  
+}
+
+.First-Section a:hover {
+    color: #55d0ff; 
+    text-decoration: underline;
+}
+
+.First-Section p + p {
+    display: inline;   
+    font-weight: bold;    
+    color: #55d0ff;       
+}
+
+.First-Section span {
+    color: #55d0ff;       
+}
+/*PICTURES SECTION*/
+
+.PICTURES-SECTION {
+    display: flex;                   
+    justify-content: center;        
+    align-items: center;           
+    gap: 20px;                     
+    padding: 50px;
+}
+
+.PICTURES-SECTION img {
+    display: block;  
+    height: auto;     
+    object-fit: cover; 
+    border-radius: 10px;  
+    transition: box-shadow 0.3s ease, width 0.3s ease;
+}
+
+.PICTURES-SECTION img:nth-child(1) {
+    width: 250px;  
+    height: 130px;                  
+}
+
+.PICTURES-SECTION img:nth-child(2) {
+    width: 250px;  
+    height: 130px;    
+}
+
+.PICTURES-SECTION img:nth-child(3) {
+    width: 250px;  
+    height: 130px;    
+}
+
+.PICTURES-SECTION img:hover {
+    box-shadow: 0 10px 30px #004aad; 
+    width: 260px;
+}
+
+/*WHAT WE OFFER SECTION */
+.WHAT-WE-OFFER-SECTION {
+    text-align: center;          
+    padding: 40px;                
+}
+
+.WHAT-WE-OFFER-SECTION .HEAD1 {
+    font-family: 'Poppins';
+    font-size: 36px; 
+    color: #55d0ff;                 
+    font-size: 50px;       
+    font-weight: 900;                  
+}
+
+.WHAT-WE-OFFER-SECTION .HEAD2 {
+    font-family: 'Poppins'; 
+    font-size: 35px;    
+    color: #004aad;      
+}
+.WHAT-WE-OFFER-SECTION > p {                 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+  
+
+.WHAT-WE-OFFER-SECTION p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 18px;                   
+    color: #004aad;                    
+    line-height: 1.6;                
+}
+
+.BOXIE {
+    background-color: #55d0ff;       
+    color: #004aad;                   
+    border-radius: 10px;             
+    padding: 20px;                    
+    margin: 20px;                   
+    display: inline-block;            
+    width: 150px;                      
+    transition: transform 0.3s ease;    
+}
+
+.BOXIE:hover {
+    transform: translateY(-5px);   
+}
+
+.BOXIE i {
+    font-size: 40px;                   
+    transition: font-size 0.3s ease;  
+}
+
+
+
+
+.Pop-Up {
+    display: none;
+    background-color: #ccf9ff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: absolute;
+    top: -55%;
+    left: 20%;
+    width: 300px;
+    z-index: 100;
+    border-radius: 8px;
+}
+
+.BOXIE:hover .Pop-Up {
+    display: block;
+}
+
+.Pop-Up p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.Pop-Up ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.Pop-Up b {
+    color: #004aad;
+}
+
+.Add_To_Cart {
+    background-color: #00acdf; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+    text-decoration: none; /
+}
+
+.Add_To_Cart a {
+    color: white; 
+    text-decoration: none; 
+    display: block; 
+}
+
+.Add_To_Cart:hover {
+    background-color: #004aad; 
+}
+
+
+
+/* Featured Courses Section */
+.Featured-Courses-Section {
+    text-align: center;               
+    padding-left: 225px;   
+    padding-right: 260px;        
+    font-family: 'Poppins', sans-serif;
+}
+
+.Featured-Courses-Section h1:nth-child(1) {
+    font-size: 36px;                 
+    color: #55d0ff;               
+    margin-bottom: 0px;
+    margin-top: 40px;                
+}
+
+.Featured-Courses-Section h1:nth-child(2) {
+    margin-bottom: 20px; 
+    font-size: 36px;                 
+    color: #004aad;  
+}
+
+.Courses {
+    background-color: #55d0ff;       
+    color: #004aad;
+    padding: 20px;                     
+    margin-bottom: 20px;               
+    border-radius: 10px;               
+    display: flex;                       
+    align-items: center;
+    height: 50px;                     
+    width: 100%;                      
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;   
+}
+
+.Courses:hover {
+    transform: translateY(-5px);      
+}
+
+
+.Courses h3 {
+    font-size: 20px;                 
+    margin-right: 5px;                      
+    font-weight: 600;
+    color: #004aad;                
+}
+
+.Courses p {
+    font-size: 19px;                   
+    margin: 0;                      
+    color: #004aad;                 
+}
+
+.Featured-Courses-Section a {
+    display: inline-block;                        
+    text-decoration: none;            
+    font-size: 18px;                   
+    color: #55d0ff;   
+    font-weight: 500;             
+}
+
+.Featured-Courses-Section a:hover {
+    color: #55d0ff;   
+    text-decoration: underline;  
+}
+
+/*TESTIMONIALS*/
+.TESTIMONIALS {
+    text-align: center; 
+}
+
+.TESTIMONIALS h1 {
+    margin-top: 90px;
+    font-size: 36px;                 
+    color: #004aad;  
+}
+
+.TESTIMONIALS p {
+    font-size: 25px;                 
+    color: #004aad; 
+    margin-bottom: 20px;
+}
+
+.Profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Profile {
+    background-color: #55d0ff;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 20px;
+    flex-basis: 20%;
+    box-shadow: 0 4px 8px #55d0ff
+}
+
+.USER {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.USER i {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #004aad;
+}
+
+.Name {
+    text-align: start; 
+}
+
+.Name h6 {
+    font-size: 19px;
+    color: #004aad;
+    margin: 0;
+}
+
+.Name p {
+    margin: 0;
+    font-size: 14px;
+    color: #004aad;
+}
+
+.Comment p {
+    font-style: italic;
+    font-size: 18px;
+}
+/*FOOTER-SECTION*/
+.FOOTER-SECTION {
+    color: #004aad;
+    padding: 40px 20px;       
+    text-align: center;        
+}
+
+.FOOTER-SECTION p {
+    font-size: 20px;          
+    margin-bottom: 20px;      
+}
+
+.Firsts-Section, .Seconds-Section {
+    margin: 10px 0;          
+}
+.menu-icon{
+    display: none;
+}
+.Firsts-Section a, .Seconds-Section a {
+    color: #55d0ff;          
+    text-decoration: none;   
+    margin: 0 10px;           
+    font-weight: 500;        
+}
+
+.Firsts-Section a:hover, .Seconds-Section a:hover {
+    color: #55d0ff;          
+    text-decoration: underline;               
+}
+
+.ICONS {
+    margin: 20px 0;          
+}
+
+.ICONS a {
+    color: #004aad;
+    margin: 0 10px;        
+    font-size: 24px;         
+}
+
+.COPYRIGHTS {
+    margin-top: 20px;       
+    font-size: 14px;        
+}
+
+/* Form Container */
+.back-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: #ccf9ff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #55d0ff;
+    font-weight: 600;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #55d0ff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #ccf9ff;
+    color: #004aad;
+}
+
+.input-field input:focus {
+    border-color: #3498db;
+}
+
+.input-field label {
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    background-color: #ccf9ff;
+    padding: 0 5px;
+    color: #004aad;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget input {
+    margin-right: 0px;
+}
+
+.forget p {
+    margin: 0;
+    color: #555;
+}
+
+.forget a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #55d0ff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Register link */
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+

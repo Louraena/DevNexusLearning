@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="java.js"></script>
+    <link rel="icon" type="image/x-icon" href="Images/LOGO ICON.png">
+    <title>Log In</title>
+</head>
+<body>
+    <style>
+
+.blog-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #ccf9ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h1, section h2 {
+    color: #004aad; 
+}
+
+
+
+.featured-articles .articles, .latest-posts .posts {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.article, .post {
+  padding: 15px;
+  background: #55d0ff;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+form {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%; /* Adjust the width of the form */
+    max-width: 600px; /* Set max width for larger screens */
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #55d0ff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #ccf9ff;
+    color: #004aad;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #004aad;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3498db;
+}
+
+
+
+
+
+
+
+
+    </style>
+    <div class="NAVIGATION">
+      <a href="HOME.html"><img src="Images/DEVNEXUSWEB LOGO.png" alt="DEVNEXUS LOGO" class="logo"></a>
+      <div class="search-box">
+          <input type="text" placeholder="Search..." id="search-input">
+          <i class="fas fa-search" id="search-icon"></i>
+          <div class="search-dropdown" id="search-dropdown">
+              <a href="HOME.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Courses.html">Courses</a>
+                <a href="FAQs.html">FAQ</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="blog.html">Blog</a>
+                <a href="Pricing.html">Pricing</a>  
+                <a href="testimonial.html">Testimonials</a>
+                <a href="PPT.html">Privacy Policy and Terms of Use</a>
+          </div>
+          
+      </div>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-bell"></i>
+      <button class="btn-signin">
+          <a href="Sign_up.html">
+              <i class="fas fa-user"></i>
+              Sign In
+          </a>   
+      </button>
+      <a href="#"><i class="fa-solid fa-bars"></i></a>
+  </div>
+    <div class="blog-page">
+        <div class="First-Section">
+            <h1>Explore Our Blog and Resources</h1>
+            <p>Your go-to destination for articles, tips, and industry insights. <br>
+                <b>Welcome to the DevNexusLearning Blog! Here, we provide valuable articles, tutorials, and resources curated for IT 
+                    students and aspiring developers. From mastering programming fundamentals to exploring the latest industry trends, we’ve got you covered.
+                  </b> </p> 
+            <p>
+                </p> 
+        </div>
+        
+      
+        <!-- Featured Articles Section -->
+        <section class="featured-articles" style="color: #004aad;">
+          <h2>Featured Articles</h2>
+          <p class="caption" style="margin: 20px;">Highlighting the most valuable resources just for you.</p>
+          <div class="articles">
+            <div class="article">
+              <h3>Top 10 Programming Tips for Beginners</h3>
+              <p>Start your coding journey with these essential tips and tricks to avoid common pitfalls.</p>
+              <button>Read More</button>
+            </div>
+            <div class="article">
+              <h3>How to Build a Career in Tech: A Step-by-Step Guide</h3>
+              <p>Discover actionable steps to create a successful career in the tech industry.</p>
+              <button>Read More</button>
+            </div>
+            <div class="article">
+              <h3>Exploring the Future of AI and Machine Learning</h3>
+              <p>Understand how AI is shaping the world and how you can be a part of it.</p>
+              <button>Read More</button>
+            </div>
+            <div class="article">
+                <h3>Mastering Object-Oriented Programming in C#</h3>
+                <p>Learn the principles of OOP and how they can elevate your coding skills in C#.</p>
+                <button>Read More</button>
+              </div>
+          </div>
+        </section>
+      
+        <!-- Categories Section -->
+        <section class="categories" style="color: #004aad;">
+          <h2>Browse by Category</h2>
+          <p class="caption">Easily find the topics that interest you most.</p>
+          <ul>
+            <li>Programming Basics: Learn foundational coding concepts and languages.</li>
+            <li>Career Advice: Get tips on landing your dream job in tech.</li>
+            <li>Tech Trends: Explore the latest innovations shaping the industry.</li>
+            <li>Productivity Tips: Maximize your efficiency as a developer.</li>
+          </ul>
+        </section>
+      
+        <!-- Latest Posts Section -->
+        <section class="latest-posts" style="color: #004aad;">
+          <h2>Latest Posts</h2>
+          <p class="caption"style="margin: 20px;" >Stay updated with our most recent content.</p>
+          <div class="posts">
+            <div class="post">
+              <h3>How to Master C# in 30 Days</h3>
+              <p>Published Date: December 1, 2024</p>
+              <p>Author: DevNexusLearning Team</p>
+            </div>
+            <div class="post">
+              <h3>5 Tools Every IT Student Should Know</h3>
+              <p>Published Date: November 25, 2024</p>
+              <p>Author: Guest Contributor, Sarah T.</p>
+            </div>
+            <div class="post">
+              <h3>The Beginner’s Guide to Cloud Computing</h3>
+              <p>Published Date: November 15, 2024</p>
+              <p>Author: DevNexusLearning Team</p>
+            </div>
+            <div class="post">
+                <h3>The Future of Web Development: Trends to Watch in 2025</h3>
+                <p>Published Date: December 5, 2024</p>
+                <p>Author: Tech Contributor, Mark H.</p>
+              </div>
+          </div>
+        </section>
+        <div class="First-Section">
+            <h1>Never Miss an Update!</h1>
+            <p>Subscribe to our newsletter for exclusive content. <br>
+                <b>Join thousands of students and developers who stay ahead with our updates. Receive free tips, tutorials, and exclusive resources right in your inbox.</b> </p> 
+            <p>
+                </p> 
+        </div>
+        <!-- Newsletter Section -->
+        
+        <form>
+            <p style="text-align: center;"></p>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <!-- Ensure the button is within the form tag -->
+            <button type="submit" class="btnn" style="width: 50%; padding: 10px; border-radius: 10px; font-size: 16px;">
+                Subscribe
+            </button>
+        </form>
+        
+        
+       
+      
+      </div>
+      
+
+      <div class="FOOTER-SECTION">
+        <p>Ready to Start Your Journey?</p>
+        <div class="Firsts-Section">
+            <a href="Sign_up.html">Sign Up Now</a>
+            <span>|</span>
+            <a href="Courses.html">Explore Courses</a>
+        </div>
+        <div class="Seconds-Section">
+            <a href="AboutUs.html">About Us</a>
+            <span>|</span>
+            <a href="Pricing.html">Pricing</a>
+            <span>|</span>
+            <a href="ContactUs.html">Contact</a>
+            <span>|</span>
+            <a href="FAQs.html">FAQs</a>
+        </div>
+        <div class="ICONS">
+            <a href="https://www.facebook.com/profile.php?id=61566342782707" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="COPYRIGHTS" >
+            <a href="PPT.html" class="testimonial-link" ><p>&copy; 2024 DevNexus Learning. All rights reserved.</p></a>
+        </div>
+        
+
+      </div>
+</body>
+</html>

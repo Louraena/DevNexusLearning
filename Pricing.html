@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="java.js"></script>
+    <link rel="icon" type="image/x-icon" href="Images/LOGO ICON.png">
+    <title>Pricing</title>
+
+    <style>
+        
+    
+        .pricing-section {
+          max-width: 1200px;
+          margin: 50px auto;
+          text-align: center;
+          padding: 20px;
+        }
+    
+        .pricing-section h1 {
+          font-size: 2.5rem;
+          color: #004aad;
+        }
+    
+        .pricing-section p {
+          color: #004aad;
+          font-size: 1rem;
+          margin-bottom: 30px;
+        }
+    
+        .pricing-tiers {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+    
+        .pricing-card {
+          background:#ccf9ff;
+          border: 1px solid #ccf9ff;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          width: 300px;
+          padding: 20px;
+          text-align: center;
+          transition: transform 0.3s;
+        }
+    
+        .pricing-card:hover {
+          transform: translateY(-10px);
+        }
+    
+        .pricing-card h2 {
+          font-size: 1.5rem;
+          margin: 10px 0;
+          color:#004aad;
+        }
+    
+        .pricing-card .price {
+          font-size: 2rem;
+          color: #007BFF;
+          margin: 15px 0;
+        }
+    
+        .pricing-card ul {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0;
+          text-align: left;
+        }
+    
+        .pricing-card ul li {
+          font-size: 0.9rem;
+          color: #004aad;
+          margin-bottom: 10px;
+        }
+    
+        .pricing-card button {
+          background: #007BFF;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+    
+        .pricing-card button:hover {
+          background: #0056b3;
+        }
+    
+        .highlight {
+          border: 2px solid #007BFF;
+        }
+    
+        @media (max-width: 768px) {
+          .pricing-tiers {
+            flex-direction: column;
+          }
+        }
+      </style>
+</head>
+<body>
+  <div class="NAVIGATION">
+    <a href="HOME.html"><img src="Images/DEVNEXUSWEB LOGO.png" alt="DEVNEXUS LOGO" class="logo"></a>
+    <div class="search-box">
+        <input type="text" placeholder="Search..." id="search-input">
+        <i class="fas fa-search" id="search-icon"></i>
+        <div class="search-dropdown" id="search-dropdown">
+           <a href="HOME.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Courses.html">Courses</a>
+                <a href="FAQs.html">FAQ</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="blog.html">Blog</a>
+                <a href="Pricing.html">Pricing</a>  
+                <a href="testimonial.html">Testimonials</a>
+                <a href="PPT.html">Privacy Policy and Terms of Use</a>
+        </div>
+        
+    </div>
+    <i class="fas fa-cog"></i>
+    <i class="fas fa-bell"></i>
+    <button class="btn-signin">
+        <a href="Sign_up.html">
+            <i class="fas fa-user"></i>
+            Sign In
+        </a>   
+    </button>
+    <a href="#"><i class="fa-solid fa-bars"></i></a>
+</div>
+
+    <div class="pricing-section">
+        <h1>Choose the Plan That Suits Your Learning Journey</h1>
+        <p>Affordable and flexible options for all levels of learners.</p>
+    
+        <div class="pricing-tiers">
+          <div class="pricing-card">
+            <h2>Free Plan</h2>
+            <p class="price">$0/month</p>
+            <ul>
+              <li>Basic programming tutorials</li>
+              <li>Community forum access</li>
+              <li>Limited topics</li>
+            </ul>
+            <button>Get Started</button>
+          </div>
+    
+          <div class="pricing-card highlight">
+            <h2>Basic Plan</h2>
+            <p class="price">$10/month</p>
+            <ul>
+              <li>Beginner and intermediate courses</li>
+              <li>Downloadable resources</li>
+              <li>Email support</li>
+            </ul>
+            <button>Choose Basic</button>
+          </div>
+    
+          <div class="pricing-card">
+            <h2>Pro Plan</h2>
+            <p class="price">$25/month</p>
+            <ul>
+              <li>All Basic Plan features</li>
+              <li>Advanced courses</li>
+              <li>Live webinars and certifications</li>
+              <li>Personalized feedback</li>
+            </ul>
+            <button>Choose Pro</button>
+          </div>
+    
+          <div class="pricing-card">
+            <h2>Team Plan</h2>
+            <p class="price">$50/month</p>
+            <ul>
+              <li>All Pro Plan features</li>
+              <li>For up to 5 users</li>
+              <li>Performance tracking tools</li>
+              <li>Group projects</li>
+            </ul>
+            <button>Choose Team</button>
+          </div>
+    
+          <div class="pricing-card">
+            <h2>Enterprise Plan</h2>
+            <p class="price">Custom Pricing</p>
+            <ul>
+              <li>All platform features</li>
+              <li>Tailored curriculum</li>
+              <li>Dedicated account manager</li>
+              <li>Premium support</li>
+            </ul>
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="FOOTER-SECTION">
+        <p>Ready to Start Your Journey?</p>
+        <div class="Firsts-Section">
+            <a href="Sign_up.html">Sign Up Now</a>
+            <span>|</span>
+            <a href="Courses.html">Explore Courses</a>
+        </div>
+        <div class="Seconds-Section">
+            <a href="AboutUs.html">About Us</a>
+            <span>|</span>
+            <a href="blog.html">Blog</a>
+            <span>|</span>
+            <a href="ContactUs.html">Contact</a>
+            <span>|</span>
+            <a href="FAQs.html">FAQs</a>
+        </div>
+        <div class="ICONS">
+            <a href="https://www.facebook.com/profile.php?id=61566342782707" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="COPYRIGHTS" >
+            <a href="PPT.html" class="testimonial-link" ><p>&copy; 2024 DevNexus Learning. All rights reserved.</p></a>
+        </div>
+        
+
+      </div>
+</body>
+</html>
